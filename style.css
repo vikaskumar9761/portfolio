@@ -1,0 +1,169 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+body {
+    height: 100vh;
+    width: 100%;
+  background-size: cover;
+    background: url("abc.jpg") no-repeat;
+   
+}
+
+header nav{
+  position: fixed;
+  background: #e2dae250;
+  left: 0;
+  box-shadow: 0 10px 20px rgba(28, 158, 245, 0.733);
+  top: 0;
+  height: 17vh;
+  width: 100%;
+  z-index: 2000;
+  
+}
+nav .navbar{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  margin: 20px auto 20px auto;
+}
+.navbar .logo{
+  height: 80px;
+  width: 150px;
+
+}
+.navbar .logo img{
+  height: 100%;
+  width: 100%;
+ 
+  object-fit: contain;
+}
+.navbar .menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.navbar .menu li{
+ 
+ list-style-type: none;
+ margin: 0 8px ;
+ padding: 10px;
+}
+.menu li a{
+  text-decoration: none;
+  font-size: 2vw;
+  color: #2c3e50;
+  font-weight: 500;
+}
+.menu li a:hover{
+  color: #000;
+}
+.navbar .search-box{
+  position: relative;
+  height: 50px;
+  width: 250px;
+}
+.search-box input[type="text"]{
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2c3e50;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  padding: 0 10px 0 40px;
+
+} 
+.search-box a{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 5px 0 0;
+  color: #2c3e50;
+  font-size: 20px;
+  border-right: 2px solid #2c3e50;
+}
+.content{
+  position: absolute;
+  top: 33%;
+  left: 7%;
+  z-index: 10;
+
+}
+.content .text{
+  font-size: 27px;
+  color: #2c3e50;
+}
+.content .name{
+  font-size: 75px;
+  color: #2c3e50;
+  margin: -20px 0 0 -3px;
+}
+.content .job{
+  font-size: 40px;
+  color: #2c3e50;
+  display: flex;
+}
+.content .job .typing-text{
+  color: #1de2d1;
+  margin-left: 10px;
+  animation: typing 5s steps(22) infinite ;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #1de2d1;
+}
+@keyframes typing {
+  0%{
+    width: 0ch;
+    text-shadow: 0 0px 20px black;
+
+  }
+  50%{
+    width: 22ch;
+    text-shadow: 0 0px 1px rgb(235, 21, 171);
+  }
+  100%{
+    width: 0ch;
+    text-shadow: 0 0px 20px black;
+  }
+  
+}
+.content .buttons{
+  margin: 20px 0 0 50px;
+}
+.content .buttons button{
+  color: #fff;
+  margin: 0 10px;
+  padding: 8px 16px ;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #2afadf 10%, #c346c2);
+  transition: all 0.5s ease-in;
+}
+.content .buttons button:hover{
+  transform: scale(0.95);
+}
+header .boy1 img{
+height: 90%;
+position: absolute;
+right: 80px;
+bottom: 0;
+-webkit-filter: drop-shadow(-5px 5px 5px #222);
+filter: drop-shadow(-5px 5px 5px #222);
+transition: all 0.5s ease-in;
+}
